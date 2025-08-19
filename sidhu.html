@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/sidhu.css" />
+</head>
+<body>
+    <header class="topbar">
+        <h1 class="s2">0001</h1>
+
+        <div class="header-buttons">
+            <button class="header-btn" id="volume-btn" title="Toggle Mute" aria-label="Toggle volume">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <button class="header-btn" id="theme-btn" title="Toggle Light/Dark Mode" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
+
+        <a class="home-link" href="index.html">Home</a>
+    </header>
+
+    <main class="main-content">
+        <section class="album-section">
+            <img src="public/moose print.jfif" alt="Moose Print" class="album-img" />
+            <div class="album-actions">
+                <button class="album-btn" title="Like" aria-label="Like">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <button class="album-btn" title="Download" aria-label="Download">
+                    <i class="fa-solid fa-download"></i>
+                </button>
+            </div>
+        </section>
+        <nav class="controls">
+            <button class="control-btn" aria-label="Previous"><i class="fa-solid fa-backward"></i></button>
+            <button class="control-btn play-pause" aria-label="Play"><i class="fa-solid fa-circle-play"></i></button>
+            <button class="control-btn" aria-label="Next"><i class="fa-solid fa-forward"></i></button>
+        </nav>
+    </main>
+
+    <script>
+        // Volume toggle button
+        const volumeBtn = document.getElementById('volume-btn');
+        volumeBtn.addEventListener('click', () => {
+            const icon = volumeBtn.querySelector('i');
+            if (icon.classList.contains('fa-volume-high')) {
+                icon.classList.replace('fa-volume-high', 'fa-volume-xmark');
+                volumeBtn.title = 'Unmute';
+            } else {
+                icon.classList.replace('fa-volume-xmark', 'fa-volume-high');
+                volumeBtn.title = 'Mute';
+            }
+        });
+
+        // Theme toggle button
+        const themeBtn = document.getElementById('theme-btn');
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const icon = themeBtn.querySelector('i');
+            if (document.body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                themeBtn.title = 'Switch to Dark Mode';
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                themeBtn.title = 'Switch to Light Mode';
+            }
+        });
+    </script>
+</body>
+</html>

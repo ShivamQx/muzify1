@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzify - Login</title>
+  <link rel="stylesheet" href="src/Login.css">
+</head>
+<body>
+  <div class="login-container">
+    <form id="loginForm" class="login-box">
+      
+      <!-- Logo -->
+      <div class="s1">
+        <img src="public/muzify.png" alt="Muzify Logo">
+        <h1>Muzify</h1>
+      </div>
+
+      <!-- Username -->
+      <input type="text" id="username" placeholder="Username">
+
+      <!-- Password -->
+      <input type="password" id="password" placeholder="Password">
+
+      <!-- Login Button -->
+      <button type="submit" class="btn primary">Log In</button>
+      <p id="message"></p>
+
+      <!-- Social Login -->
+      <button type="button" class="btn google">Continue With Google</button>
+      <button type="button" class="btn apple">Continue With Apple</button>
+
+      <!-- Signup link -->
+      <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+    </form>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f0f0f0;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* Container */
+.t1 {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.s3{
+  font-size: 28px;
+  color: #111;
+  transition: color 0.3s;
+}
+.s3:hover {
+  color: purple;
+}
+.btn {
+  background: linear-gradient(to right, #a600b9, #7dafbe);
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.3s;
+}
+.btn:hover {
+  opacity: 0.85;
+}
+
+/* Navigation */
+.nav {
+  display: flex;
+  gap: 40px;
+  margin: 20px 0;
+}
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+.nav a:hover {
+  color: purple;
+}
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 30px;
+}
+.search-bar input {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+section h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+/* Grid for Images */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+/* Cards (Featured + Albums) */
+.s4, .s5 {
+  width: calc(25% - 15px);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.s4 img, .s5 img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.s4:hover, .s5:hover {
+  transform: scale(1.05);
+}
+
+/* Tags under featured */
+.tags {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+  font-weight: bold;
+}
+.tags span {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: #eee;
+  transition: background 0.3s;
+}
+.tags span:hover {
+  background: #d9c2f0;
+}
+
+/* Album titles */
+.s5 p {
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+.s5 small {
+  font-weight: normal;
+  color: #555;
+}
+
+/* Responsive */
+@media(max-width: 900px) {
+  .s4, .s5 {
+    width: calc(50% - 15px);
+  }
+}
+@media(max-width: 600px) {
+  .s4, .s5 {
+    width: 100%;
+  }
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .search-bar input {
+    max-width: 100%;
+  }
+}

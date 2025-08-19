@@ -1,0 +1,275 @@
+:root {
+    --color-bg-dark: #2f2f3a;
+    --color-bg-light: #f9f9fa;
+    --color-primary-dark: #49a09d;
+    --color-primary-light: #5f2c82;
+    --color-text-dark: #e0e0e0;
+    --color-text-light: #2c2c34;
+    --btn-bg-opacity: 0.3;
+    --border-radius: 20px;
+    --box-shadow-soft: 0 8px 24px rgba(0, 0, 0, 0.15);
+    --transition: all 0.3s ease;
+}
+
+body {
+    background: var(--color-bg-dark);
+    color: var(--color-text-dark);
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem 3rem;
+    background: linear-gradient(90deg, var(--color-primary-light), var(--color-primary-dark));
+    box-shadow: var(--box-shadow-soft);
+}
+
+.s2 {
+    font-size: 2.75rem;
+    font-weight: 900;
+    letter-spacing: 0.3em;
+    color: #fff;
+    user-select: none;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin-left: 1000px;
+}
+
+.header-btn {
+    background: rgba(255 255 255 / var(--btn-bg-opacity));
+    border: none;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgb(255 255 255 / 0.15);
+    transition: var(--transition);
+    will-change: transform, background-color;
+}
+
+.header-btn:hover, .header-btn:focus {
+    background: rgba(255 255 255 / 0.6);
+    color: var(--color-primary-light);
+    transform: scale(1.15);
+    outline: none;
+}
+
+.home-link {
+    font-size: 1.1rem;
+    background-color: rgba(255 255 255 / 0.25);
+    color: #fff;
+    text-decoration: none;
+    padding: 0.65rem 1.8rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    box-shadow: var(--box-shadow-soft);
+    transition: var(--transition);
+    user-select: none;
+    white-space: nowrap;
+}
+
+.home-link:hover, .home-link:focus {
+    background-color: #fff;
+    color: var(--color-primary-dark);
+}
+
+.main-content {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    padding-bottom: 4rem;
+}
+
+.album-section {
+    background: rgba(255 255 255 / 0.05);
+    border-radius: var(--border-radius);
+    padding: 2em 2.5em 3em 2.5em;
+    box-shadow: var(--box-shadow-soft);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 360px;
+    max-width: 400px;
+}
+
+.album-img {
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    user-select: none;
+    object-fit: cover;
+}
+
+.album-actions {
+    margin-top: 1.4rem;
+    display: flex;
+    gap: 2rem;
+}
+
+.album-btn {
+    background: rgba(255 255 255 / 0.12);
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--transition);
+    user-select: none;
+}
+
+.album-btn:hover, .album-btn:focus {
+    background: var(--color-primary-dark);
+    color: #fff;
+    box-shadow: 0 8px 25px var(--color-primary-dark);
+    transform: scale(1.18);
+    outline: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-top: 1rem;
+}
+
+.control-btn {
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-light));
+    border: none;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    box-shadow: 0 7px 30px rgb(0 0 0 / 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+    user-select: none;
+}
+
+.control-btn:hover, .control-btn:focus {
+    background: linear-gradient(135deg, var(--color-primary-light), var(--color-primary-dark));
+    box-shadow: 0 10px 40px var(--color-primary-light);
+    transform: scale(1.1);
+    outline: none;
+}
+
+.play-pause {
+    font-size: 3.3rem;
+}
+
+@media (max-width: 480px) {
+    .topbar {
+        padding: 1rem 1.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .header-buttons {
+        margin-left: 0;
+    }
+
+    .home-link {
+        align-self: center;
+        padding: 0.5rem 1.3rem;
+        font-size: 1rem;
+    }
+
+    .main-content {
+        margin-top: 3rem;
+        gap: 2rem;
+        padding: 0 1rem 3rem 1rem;
+    }
+
+    .album-section {
+        width: 100%;
+        max-width: 320px;
+        padding: 1.5rem 1.8rem 2.5rem 1.8rem;
+    }
+
+    .controls {
+        gap: 2.5rem;
+    }
+
+    .control-btn {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+
+    .play-pause {
+        font-size: 2.5rem;
+    }
+}
+
+/* Light mode styles */
+body.light-mode {
+    background: var(--color-bg-light);
+    color: var(--color-text-light);
+}
+
+body.light-mode .topbar {
+    background: linear-gradient(90deg, var(--color-primary-dark), var(--color-primary-light));
+    box-shadow: 0 4px 18px rgb(0 0 0 / 0.1);
+}
+
+body.light-mode .logo,
+body.light-mode .home-link,
+body.light-mode .album-btn,
+body.light-mode .control-btn,
+body.light-mode .header-btn {
+    color: var(--color-text-light);
+}
+
+body.light-mode .home-link {
+    background: rgba(0 0 0 / 0.05);
+}
+
+body.light-mode .album-section {
+    background: #fff;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.08);
+}
+
+body.light-mode .album-img {
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+}
+
+body.light-mode .album-btn:hover,
+body.light-mode .album-btn:focus {
+    background: var(--color-primary-light);
+    box-shadow: 0 12px 48px var(--color-primary-light);
+}
+
+body.light-mode .control-btn:hover,
+body.light-mode .control-btn:focus {
+    box-shadow: 0 12px 40px var(--color-primary-light);
+}
+
+body.light-mode .header-btn:hover,
+body.light-mode .header-btn:focus {
+    background: rgba(0 0 0 / 0.1);
+    color: var(--color-primary-light);
+}

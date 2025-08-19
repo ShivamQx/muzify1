@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(61, 60, 60);
+    margin: 0;
+    padding: 0;   
+}
+#ja{
+    display: flex;
+    width: 100%;
+    height: 100px;
+
+}
+.ja1{
+    width: 60%;
+    height: 100px;
+    margin-left: 50px;
+    color: white;
+}
+#ja2{
+    width: 400px;
+    height: 400px;
+    margin-left: 500px;
+    margin-top: 30px;
+}
+#ja3{
+    display: flex;
+    margin-left: 500px;
+}
+.ja4{
+    margin-left: 100px;
+    margin-top: 50px;
+}

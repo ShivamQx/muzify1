@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="searchbox" placeholder="search anything">
+
+    <ul id="itemList">
+        <li>Honey Singh</li>
+        <li>Raftaar</li>
+        <li>Sidhu</li>
+        <li>K.k</li>
+        <li>Arjit</li>
+        <li>Eminem</li>
+        <li>Beatles</li>
+        <li>Rahmaan</li>
+        <li>Pritam</li>
+        <li>Marshmello</li>
+    </ul>
+    <script>
+        const searchbox = document.getElementById("searchbox");
+        const items = document.querySelectorAll("#itemList li");
+
+        searchbox.addEventListener("keyup", function() {
+            const text = searchbox.value.toLowerCase();
+            items.forEach(item => {
+                item.style.display = item.textContent.toLowerCase().includes(text)?"": "none";
+            });
+        });
+
+    </script>
+</body>
+</html>

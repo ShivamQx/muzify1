@@ -1,0 +1,137 @@
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  min-height: 100vh;
+}
+
+/* Login Box */
+.login-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.login-box {
+  background: #0f0f1a;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.4);
+  animation: fadeIn 0.6s ease;
+}
+
+/* Logo Section */
+.s1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.s1 img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+.s1 h1 {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  background: #2a2a3b;
+  color: white;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+input::placeholder {
+  color: #bbb;
+}
+input:focus {
+  border: 2px solid #6a5acd;
+  box-shadow: 0 0 8px rgba(106,90,205,0.5);
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  margin-top: 12px;
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+
+.primary {
+  background: linear-gradient(90deg, #6a5acd, #483d8b);
+  color: white;
+}
+
+.google {
+  background: white;
+  color: #555;
+}
+.google:hover {
+  background: #ececec;
+}
+
+.apple {
+  background: black;
+  color: white;
+}
+.apple:hover {
+  background: #222;
+}
+
+/* Signup text */
+.signup {
+  margin-top: 15px;
+  color: #ccc;
+}
+.signup a {
+  color: #6a5acd;
+  font-weight: bold;
+  text-decoration: none;
+}
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Error message */
+#message {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: red;
+  min-height: 20px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {opacity: 0; transform: translateY(-15px);}
+  to {opacity: 1; transform: translateY(0);}
+}

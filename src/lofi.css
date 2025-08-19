@@ -1,0 +1,150 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #c5c2c2;
+  display: flex;
+  justify-content: center;
+}
+
+/* Main Container */
+#db {
+  background: #e3e0e0;
+  width: 90%;
+  max-width: 1300px;
+  margin: 30px auto;
+  padding-bottom: 50px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Header */
+#da {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 40px;
+}
+
+.da1 {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.da2 {
+  color: #111;
+  transition: color 0.3s ease;
+}
+.da2:hover {
+  color: purple;
+}
+
+.da3 {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.da4 a, 
+.da4 h2 {
+  text-decoration: none;
+  color: #222;
+  transition: color 0.3s ease;
+}
+.da4 a:hover, 
+.da4:hover h2 {
+  color: purple;
+}
+.active h2 {
+  color: purple;
+  border-bottom: 2px solid purple;
+  padding-bottom: 5px;
+}
+
+/* Banner */
+#da6 {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+.banner {
+  width: 100%;
+  max-width: 1200px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0,0,0,0.2);
+}
+
+/* Search */
+#da7 {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+#da7 input {
+  width: 60%;
+  max-width: 700px;
+  height: 40px;
+  padding: 0 15px;
+  border-radius: 20px;
+  border: 1px solid #999;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+#da7 input:focus {
+  border: 2px solid purple;
+  box-shadow: 0px 0px 6px rgba(128,0,128,0.5);
+  outline: none;
+}
+
+/* Playlist Title */
+#da8 {
+  text-align: left;
+  margin: 20px 70px;
+}
+#da8 h1 {
+  color: #000;
+  font-size: 1.8rem;
+}
+
+/* Playlist Items */
+#da9 {
+  margin: 0 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.da10 {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.da10 img {
+  width: 65px;
+  height: 65px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.da10 p {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #222;
+}
+
+.da10:hover {
+  transform: translateX(8px) scale(1.02);
+  box-shadow: 0px 6px 15px rgba(0,0,0,0.2);
+}

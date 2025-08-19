@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzify</title>
+  <link rel="stylesheet" href="src/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <div id="a">
+    <div id="b">
+    <div class="b1"><img src="public/muzify.png" alt="muzify" width="70px" height="60px" ><h2>Muzify</h2></div>
+    <div id="b2">
+      <div class="b12"><button style="border: 0px;  background-color: rgb(227, 224, 224);" ><a href="index.html"><p>Home</p></a></button></div>
+
+       <div class="b12"><button style="border: 0px;  background-color: rgb(227, 224, 224);"><a href="browse.html"><p>Browse</p></a></button></div>
+
+     <div class="b12"><button style="border: 0px;   background-color: rgb(227, 224, 224);"  ><a href="library.html"><p>Library</p></a></button></div>
+    </div>
+
+    <div id="b3"><a href="login.html ">Sign up</a></div>
+  </div>
+
+
+
+  <div id="c">
+    <div class="d">
+      <div class="d1"><h1>Stream Your Sound</h1><p>Explore millions of songs,create your playlists,<br>and follow your favorite artists.</p>
+      </div>
+      <div class="d2"><h1>Featured Playlists</h1><div id="d3">
+
+        <div class="d4"><a href="lofi.html"><p style="color: rgb(255, 255, 255);">Lo-Fi <br>Chill</p></a></div>
+
+        <div class="d5"><a href="Top.html"><p style="color: rgb(255, 255, 255);">Top <br>Hits</p></a></div>
+
+        <div class="d6"><a href="Indie.html"><p style="color: rgb(255, 255, 255);">Indie <br>Mix</p></a></div>
+
+      </div>
+    </div>
+      <div id="e"><h1>Trending Now</h1>
+        <div id="e1">
+          <ol id="e2">
+          <div id="e12"><a href="sidhu.html"><li class="e3" onclick="a0008()">1<div id="e4" ><h5>0008</h5><p class="e7">Sidhu Moose Wala,Jenny Johal,The Kidd</p>
+           </div><div id="e8"><i class="fa-solid fa-circle-play fa-sm" style="color: #000000; "></i></div></li></a></div>
+
+           <div id="e13"> <li class="e3" onclick="Neal()">2<div id="e5"><h5>Neal<p class="e7">Sidhu Moose Wala,Mxrci</p></div><div id="e9"><i class="fa-solid fa-circle-play fa-sm" style="color: #000000;"></i></div></li></div>
+
+           <div id="e14"><li class="e3" onclick="Takenote()">3<div id="e6"><h5>Take Note</h5><p class="e7">Sidhu Moose Wala,JayB Singh</p></div><div id="e10"><i class="fa-solid fa-circle-play fa-sm" style="color: #0a0a0a;"></i></div></li></div>
+        </ol>
+        </div>
+    </div>
+  </div>
+
+
+
+
+    <div class="f">
+      <div id="g">
+        <!-- <audio src="public/WhatsApp Audio 2025-07-31 at 4.53.00 PM.mpeg"></audio> -->
+        <div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><h5 style="">Young G.O.A.T </h5><P style="color: rgb(0, 0, 0); font-size: small;">Cheema Y</P></div> </div>
+        <div id="g3"> <div class="g4"><audio controls src="public/Young G O A T.mp3" style="width: 250px;"></audio></div> 
+      </div>
+      </div>
+      
+      
+        <div id="h"><h1 class="h1">Recents Songs</h1>
+          <ol class="h2">
+           <div onclick="Antidote()"><li class="h3" ><p class="h12" style="margin-top: 30px; color: #000000;">1</p><div id="h4"><h5 style="margin-bottom: 0;">ANTIDOTE</h5><p class="h13">Karan Aujla</p>
+           </div><div id="h8"><i class="fa-solid fa-circle-play fa-xl" style="color: #000000;"></i></div></li></div> 
+
+           <div onclick="Lor()"><li class="h3"><p class="h12" style="margin-top: 30px; color: #000000;">2</p><div id="h5"><h5>Lor Lor<p class="h13">Jassi Gill</p></div><div id="h9"><i class="fa-solid fa-circle-play fa-xl" style="color: #000000;"></i></div></li></div>
+
+           <div onclick="That()"><li class="h3"><p class="h12" style="margin-top: 30px;color: #000000;">3</p><div id="h6"><h5 style="margin-bottom: 0;">That Girl</h5><p class="h13">Amrinder Gill</p></div><div id="h10"><i  class="fa-solid fa-circle-play fa-xl" style="color: #000000;"></i></div></li></div>
+
+           <div onclick="Kde()"><li class="h3"><p class="h12" style="margin-top: 30px; color: #000000;">4</p><div id="h7"><h5 style="margin-bottom: 0;">Kde Kde</h5><p class="h13">Arjan Dhillon</p></div><div id="h11"><i class="fa-solid fa-circle-play fa-xl" style="color: #000000;"></i></div></li></div>
+            </ol>
+        </div>
+  
+  
+
+</div>
+  <script>
+    function forward(){
+      document.getElementById("g1").innerHTML=`<div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><h5 style="color: white; margin-left: 30px; margin-top: 30px;">Clash</h5><P style="color: white; margin-left:32px; font-size: small;">Diljit Dosanjh</P></div>`;
+    }
+
+
+    function backword(){
+      document.getElementById("g1").innerHTML= `<div id"g2"><img src="public/wave.png" alt="" width="120px" height="120px"><h5 style="color: white; margin-left: 30px; margin-top: 30px;">Legends</h5><P style="color: white; margin-left:32px; font-size: small;">Sidhu Moose Wala</P></div>`;
+
+    }
+
+    function stop(){
+      document.getElementById("g").innerHTML=`<audio src="public/WhatsApp Audio 2025-07-31 at 4.53.00 PM.mpeg" autoplay hidden ></audio>
+        <div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><h5 style="color: white; margin-left: 30px; margin-top: 30px;">Young G.O.A.T </h5><P style="color: white; margin-left:32px; font-size: small;">Cheema Y</P></div> </div>
+       <div id="g3"> <div class="g4"><input style="width: 200px; color: rgb(0, 0, 0);" type="range"></div>
+        <div id="g5">
+          <div class="g6" onclick="backword()"><i class="fa-solid fa-backward fa-2xl" style="color: #000000;"></i></div>
+          <div class="g6" onclick="stop()"><i class="fa-solid fa-circle-play fa-2xl" style="color: #000000;"></i></div>
+          <div class="g6" onclick="forward()"><i class="fa-solid fa-forward fa-2xl" style="color: #000000;"></i></div>
+      </div>`; }
+
+      
+      function a0008(){
+        document.getElementById("g").innerHTML=` <div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><p style=""> 0008 </p><P style="color: rgb(0, 0, 0); font-size: small;">Sidhu Moose Wala</P></div> </div>
+        <div id="g3"> <div class="g4"><audio controls autoplay src="public/0008.mpeg" style="width: 250px;"></audio></div> 
+      </div>`;
+      }
+      function Neal(){
+        document.getElementById("g").innerHTML=`<div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><p style=""> Neal </p><P style="color: rgb(0, 0, 0); font-size: small;">Sidhu Moose Wala</P></div> </div>
+        <div id="g3"> <div class="g4"><audio controls autoplay src="public/Neal.mp4" style="width: 250px;"></audio></div> 
+      </div>`;
+      }
+      function Takenote(){
+        document.getElementById("g").innerHTML=`<div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><p style=""> Take Notes </p><P style="color: rgb(0, 0, 0); font-size: small;">Sidhu Moose Wala</P></div> </div>
+        <div id="g3"> <div class="g4"><audio controls autoplay src="public/TAKE NOTES.mp4" style="width: 250px;"></audio></div> 
+      </div>`;
+      }
+      function Antidote(){
+         document.getElementById("g").innerHTML=`<div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><p style=""> Antidote </p><P style="color: rgb(0, 0, 0); font-size: small;">Karan Aujla</P></div> </div>
+        <div id="g3"> <div class="g4"><audio controls autoplay src="public/Antidote.mp4" style="width: 250px;"></audio></div> 
+      </div>`;
+
+      }
+      function Lor(){
+         document.getElementById("g").innerHTML=`<div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><p style=""> Lor Lor </p><P style="color: rgb(0, 0, 0); font-size: small;">Jassi Gill</P></div> </div>
+        <div id="g3"> <div class="g4"><audio controls autoplay src="public/Lor Lor.mp4" style="width: 250px;"></audio></div> 
+      </div>`;
+    }
+    function That(){
+         document.getElementById("g").innerHTML=`<div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><p style=""> That Girl </p><P style="color: rgb(0, 0, 0); font-size: small;">Amrinder Gill</P></div> </div>
+        <div id="g3"> <div class="g4"><audio controls autoplay src="public/ThatGirl.mp4" style="width: 250px;"></audio></div> 
+      </div>`;
+    }
+    function Kde(){
+         document.getElementById("g").innerHTML=`<div id="g1"><div id="g2"><img src="public/wave.png" alt="" width="120px" height="120px"><p style=""> Kde Kde </p><P style="color: rgb(0, 0, 0); font-size: small;">Arjan Dhillon</P></div> </div>
+        <div id="g3"> <div class="g4"><audio controls autoplay src="public/kde kde.mp4" style="width: 250px;"></audio></div> 
+      </div>`;
+    }
+
+  </script>
+</body>
+</html>
