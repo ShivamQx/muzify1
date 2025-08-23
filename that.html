@@ -1,19 +1,76 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="src/lor.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Music Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/index.css" />
 </head>
 <body>
-    <div id="ja"><h1 class="ja1">That Girl</h1><input type="text" placeholder="search" style="width: 400px; height: 30px; margin-top: 20px;border-radius: 20px;"><a href="index.html"><p style="margin-left: 20px; margin-top: 30px; color: white;">Home</p></a></div>
+    <div id="x10">
+    <header class="topbar">
+        <h1 class="s2">That Girl</h1>
 
+        <div class="header-buttons" style="margin-left: 850px;">
+            <button class="header-btn" id="volume-btn" title="Toggle Mute" aria-label="Toggle volume">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+            <button class="header-btn" id="theme-btn" title="Toggle Light/Dark Mode" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </div>
 
-    <div id="ja2"><img src="public/that.jpg" alt="" height="400px" width="500px"></div>
+        <a class="home-link" href="home.html">Home</a>
+    </header>
 
+    <main class="main-content">
+        <section class="album-section">
+            <img src="public/that.jpg" alt="That Girl" class="album-img" />
+            <div class="album-actions">
+                <button class="album-btn" title="Like" aria-label="Like">
+                    <i class="fa-solid fa-heart"></i>
+                </button>
+                <button class="album-btn" title="Download" aria-label="Download">
+                    <i class="fa-solid fa-download"></i>
+                </button>
+            </div>
+        </section>
+        <nav class="controls">
+            <button class="control-btn" aria-label="Previous"><i class="fa-solid fa-backward"></i></button>
+            <button class="control-btn play-pause" aria-label="Play"><i class="fa-solid fa-circle-play"></i></button>
+            <button class="control-btn" aria-label="Next"><i class="fa-solid fa-forward"></i></button>
+        </nav>
+    </main>
 
-    <div id="ja3"><div class="ja4"><i class="fa-solid fa-backward fa-2xl" style="color: #ffffff;"></i></div><div class="ja4"><i class="fa-solid fa-circle-play fa-2xl" style="color: #ffffff;"></i></div><div class="ja4"><i class="fa-solid fa-forward fa-2xl" style="color: #ffffff;"></i></div></div>
-    
+    <script>
+        // Volume toggle button
+        const volumeBtn = document.getElementById('volume-btn');
+        volumeBtn.addEventListener('click', () => {
+            const icon = volumeBtn.querySelector('i');
+            if (icon.classList.contains('fa-volume-high')) {
+                icon.classList.replace('fa-volume-high', 'fa-volume-xmark');
+                volumeBtn.title = 'Unmute';
+            } else {
+                icon.classList.replace('fa-volume-xmark', 'fa-volume-high');
+                volumeBtn.title = 'Mute';
+            }
+        });
+
+        // Theme toggle button
+        const themeBtn = document.getElementById('theme-btn');
+        themeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+            const icon = themeBtn.querySelector('i');
+            if (document.body.classList.contains('light-mode')) {
+                icon.classList.replace('fa-moon', 'fa-sun');
+                themeBtn.title = 'Switch to Dark Mode';
+            } else {
+                icon.classList.replace('fa-sun', 'fa-moon');
+                themeBtn.title = 'Switch to Light Mode';
+            }
+        });
+    </script>
+    </div>
 </body>
 </html>
